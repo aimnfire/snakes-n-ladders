@@ -26,7 +26,7 @@ function roll() {
 	document.getElementById("message1").innerHTML = "YOU ROLLED  " + a +"!";
 	document.getElementById("message2").innerHTML = "YOU MOVE  " + a +" PLACE(S)!";
 	position += a;
-	var move = 100; //position % 100;
+	var move = position % 100;
 	
 	setTimeout(function(){document.getElementById(move.toString()).appendChild(elem);  
 	if (move == 16 || move == 47 || move == 49 || move == 56 || move == 62 || move == 64 || move == 87 || move == 93 || move == 95 || move == 98 || move == 1 || move == 4 || move == 9 || move == 21 || move == 28 || move == 36 || move == 51 || move == 71 || move == 80){ 
@@ -94,7 +94,7 @@ function roll2() {
 	document.getElementById("message1").innerHTML = "YOU ROLLED  " + b +  " & " + c+ "!";
 	document.getElementById("message2").innerHTML = "YOU MOVE  " + sum +" PLACE(S)!";
 	position += sum;
-	var move = 100; //position %100;
+	var move = position %100;
 	
 	setTimeout(function(){document.getElementById(move.toString()).appendChild(elem);  
 	if (move == 16 || move == 47 || move == 49 || move == 56 || move == 62 || move == 64 || move == 87 || move == 93 || move == 95 || move == 98 || move == 1 || move == 4 || move == 9 || move == 21 || move == 28 || move == 36 || move == 51 || move == 71 || move == 80){ 
