@@ -1,0 +1,162 @@
+img {
+position: absolute;
+z-index: 1;
+width: 600px;
+
+}
+
+.board {
+	position: absolute;
+	z-index: 2;
+	display: grid;
+	grid-template-columns: repeat(10, 60px);
+	/* height: 1850px;*/
+	width: 600px; 
+	/* background-color: red; */
+	padding: 1px;
+	margin: 0;
+	grid-gap: 0;
+	/* border-style: solid;
+	border-width: 20px; */
+}
+.square {
+	font-family: sans-serif, "Comic Sans MS";
+	font-weight: bold;
+	font-size: 20px;
+	display: flex;
+	height: 60px;
+	width: 60px;
+	margin: 0;
+	padding: 0;
+	/*border-style: solid; */
+	/* background-color: #a5cd98; */
+	justify-content: center;
+	align-items: center;
+}
+
+#dice {
+	background-color: #a5cd98;
+	position: absolute;
+	z-index: 3;
+	display: grid;
+	grid-template-columns: 200px 100px 100px;
+	font-size: 20pt;
+	margin-left: 700px;
+	border-style: solid;
+	height: auto;
+}
+#rolldice {
+	height: 100px;
+	
+}
+#roll2dice {
+	grid-row-start: 2;
+	height: 100px;
+	
+}
+
+#dice1 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	/* border-style: solid; */
+	margin: 0;
+	padding: 0;
+	width: 100px;
+	max-height: 100%;
+	object-fit: cover;
+	
+}
+
+#dice2 {
+	grid-row-start: 2;
+	grid-column-start: 2;
+	margin: 0;
+	width: 100px;
+	max-height: 100%;
+	object-fit: cover;
+	
+	
+}
+
+#dice3 {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	margin: 0;
+	width: auto;
+	max-height: 100%;
+	object-fit: cover;
+	padding: 0;
+	
+}
+button {
+	font-size: 15pt;
+	font-weight: bold;
+	background-color: #CD853F;
+	cursor: pointer;
+}
+
+#message1 {
+	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100px;
+	border-bottom-style: solid;
+	border-top-style: solid;
+	font-weight: bold;
+}
+#message2 {
+	grid-row-start: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100px;
+	font-weight: bold;
+}
+#location {
+	position: absolute;
+	z-index: 3;
+	display: grid;
+	grid-template-columns: repeat(10, 120px);
+	/* height: 1850px;*/
+	width: 1200px; 
+	padding: 1px;
+	margin: 0;
+	grid-gap: 0;
+	/* border-style: solid;
+	border-width: 20px; */
+}
+
+#emoji {
+	
+	/* display: flex; */
+	/* align-items: center;
+	justify-content: center; */
+	grid-column: 2/3;
+	margin: 0;
+	padding: 10px;
+	width: 60px; 
+	height: 60px;
+	object-fit: cover;
+	
+}
+
+#emoji2 {
+	/* display: flex; */
+	/* align-items: center;
+	justify-content: center; */
+	margin: 0;
+	padding: 5px;
+	width: 100px; 
+	max-height: 100%;
+	object-fit: cover;
+	border-style: solid;
+}
