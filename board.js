@@ -12,8 +12,8 @@ var position = 0;
 
 var pending = false;
 
-document.getElementById("message1").innerHTML = "ROLL A DIE!";
-document.getElementById("message2").innerHTML = "...OR TWO DICE!!";
+//document.getElementById("message1").innerHTML = "ROLL A DIE!";
+//document.getElementById("message2").innerHTML = "...OR TWO DICE!!";
 
 function roll() {
 	console.log(pending);
